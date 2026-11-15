@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,49 +12,151 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    background: #10182b;
+    padding: 20px 8%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 25px 8%;
-    background: #10182b;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
 }
 
 span {
     color: #00d4ff;
 }
 
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
 nav a {
-    color: #00d4ff;
+    color: white;
     text-decoration: none;
 }
 
-main {
-    text-align: center;
-    padding: 130px 20px;
-}
-
-h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-h2 {
+nav a:hover {
     color: #00d4ff;
+}
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    color: #00d4ff;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
     margin-bottom: 20px;
 }
 
-p {
+.hero p {
     color: #b7c1d5;
-    margin: 15px;
+    margin-bottom: 25px;
 }
 
-main a {
+.btn {
     display: inline-block;
-    margin-top: 25px;
-    padding: 13px 25px;
     background: #00d4ff;
     color: #080d1b;
+    padding: 13px 25px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#about p, #future p, #contact p {
+    color: #b7c1d5;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #141f35;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #263954;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00d4ff;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b7c1d5;
+}
+
+.project-card {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background: #10182b;
+    text-align: center;
+    padding: 25px;
+    color: #b7c1d5;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
 }

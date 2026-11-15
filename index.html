@@ -4,23 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website | OGGY</title>
+    <title>OGGY | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <h2>OGGY<span>.</span></h2>
-        <a href="/my-portfolio/">Back to Portfolio</a>
-    </nav>
+    <header>
+        <nav>
+            <h2 class="logo">SAMIR<span>.</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <h1>Welcome to My First Website!</h1>
-        <h2>I'm SAMIR 👋</h2>
-        <p>This is my first website built using HTML and CSS.</p>
-        <p>I am learning Web Development step by step.</p>
-        <a href="../index.html">Go to My Portfolio</a>
-    </main>
+    <section id="home" class="hero">
+        <div>
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>SAMIR</span></h1>
+            <h2>Future Web Developer</h2>
+            <p>I am learning HTML, CSS, JavaScript and Programming.</p>
+            <a href="#projects" class="btn">Explore My Projects</a>
+        </div>
+    </section>
 
+    <section id="about">
+        <h2>About <span>Me</span></h2>
+        <p>
+            Hello! I'm SAMIR. I am an IT student passionate about
+            Web Development, Software Development and Cybersecurity.
+            I am learning new skills and building projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My <span>Skills</span></h2>
+        <div class="cards">
+            <div class="card"><h3>HTML</h3><p>Learning</p></div>
+            <div class="card"><h3>CSS</h3><p>Learning</p></div>
+            <div class="card"><h3>JavaScript</h3><p>Coming Soon</p></div>
+            <div class="card"><h3>C Programming</h3><p>Learning</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My <span>Projects</span></h2>
+        <div class="cards">
+
+            <a href="first-website/index.html" class="card project-card">
+                <h3>My First Website</h3>
+                <p>My first website built using HTML and CSS.</p>
+                <span>View Project →</span>
+            </a>
+
+            <a href="index.html" class="card project-card">
+                <h3>Portfolio Website</h3>
+                <p>My personal developer portfolio.</p>
+                <span>View Project →</span>
+            </a>
+
+            <a href="#future" class="card project-card">
+                <h3>Future Project</h3>
+                <p>More exciting projects coming soon.</p>
+                <span>Coming Soon →</span>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="future">
+        <h2>Coming <span>Soon!</span></h2>
+        <p>I'm currently working on new projects. Stay tuned!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: github.com/your-username</p>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> OGGY. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
